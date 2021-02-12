@@ -21,8 +21,6 @@ const mealInput=`https://www.themealdb.com/api/json/v1/1/search.php?s=${foodTitl
         <button  onclick="displayMealatail('${meal.strMeal}')">Meal Details </button>
         `;
 
-      if (i==11){
-          break;
       }
         
     }
