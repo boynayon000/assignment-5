@@ -2,7 +2,7 @@ document.getElementById('searchBtn').addEventListener("click",searchInput);
 function searchInput(){
     document.getElementById('showFoodsList').innerText=" ";
 const foodTitle=document.getElementById('foodInput').value;
-const mealInput=`https://www.themealdb.com/api/json/v1/1/search.php?s=${foodTitle}`
+const mealInput=`https://www.themealdb.com/api/json/v1/1/search.php?s=${foodTitle}`;
  fetch(mealInput)
 .then(res => res.json())
 .then (data=>{
@@ -20,10 +20,7 @@ const mealInput=`https://www.themealdb.com/api/json/v1/1/search.php?s=${foodTitl
         <img src="${meal.strMealThumb}">
         <button  onclick="displayMealatail('${meal.strMeal}')">Meal Details </button>
         `;
-
       }
-        
-    }
 });
 }
 const displayMealatail=name=>{
